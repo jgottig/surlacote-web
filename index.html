@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="es-AR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sur La Côte — La elegancia de ser diferente</title>
+    <meta name="description" content="Indumentaria masculina con estilo europeo. Camisas de lino, chombas de pima, pantalones y abrigos. Envío a todo el país desde Rosario." />
+    <meta name="theme-color" content="#f3ede3" />
+    <meta property="og:title" content="Sur La Côte" />
+    <meta property="og:description" content="La elegancia de ser diferente. Indumentaria masculina con estilo europeo." />
+    <meta property="og:image" content="/img/campaign-velero.webp" />
+    <link rel="icon" href="/img/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://acdn-us.mitiendanube.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..800&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Loader -->
+    <div class="loader" id="loader" aria-hidden="true">
+      <div class="loader__word">
+        <span>S</span><span>U</span><span>R</span><span>&nbsp;</span><span>L</span><span>A</span><span>&nbsp;</span><span>C</span><span>Ô</span><span>T</span><span>E</span>
+      </div>
+      <div class="tricolor loader__line"><i></i><i></i><i></i></div>
+      <div class="loader__sub">France · Rosario</div>
+    </div>
+
+    <div class="cursor" id="cursor"><span class="cursor__label">Ver</span></div>
+
+    <!-- Announcement -->
+    <div class="announce" id="announce"><div class="announce__track"></div></div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+      <a href="#top" class="header__logo" aria-label="Sur La Côte, inicio">
+        <span class="wordmark">SUR LA CÔTE</span>
+        <span class="tricolor tricolor--sm"><i></i><i></i><i></i></span>
+      </a>
+      <nav class="header__nav" aria-label="Principal">
+        <a href="#tienda" data-magnetic>Tienda</a>
+        <a href="#look" data-magnetic>Armá tu look</a>
+        <a href="#colecciones" data-magnetic>Colecciones</a>
+        <a href="#locales" data-magnetic>Locales</a>
+      </nav>
+      <div class="header__actions">
+        <button class="icon-btn" id="openSearch" aria-label="Buscar">
+          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
+          <kbd>⌘K</kbd>
+        </button>
+        <button class="bag-btn" id="openCart" aria-label="Abrir bolsa">
+          <span>Bolsa</span><span class="bag-btn__count" id="cartCount">0</span>
+        </button>
+        <button class="icon-btn burger" id="openMenu" aria-label="Menú"><span></span><span></span></button>
+      </div>
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#tienda">Tienda</a>
+      <a href="#look">Armá tu look</a>
+      <a href="#colecciones">Colecciones</a>
+      <a href="#locales">Locales</a>
+    </div>
+
+    <main id="top">
+      <!-- HERO -->
+      <section class="hero" id="hero">
+        <div class="hero__sticky">
+          <div class="hero__meta hero__meta--left">
+            <span>Printemps · Été</span>
+            <strong>2026</strong>
+          </div>
+          <div class="hero__meta hero__meta--right">
+            <span class="clock"><em>Rosario</em> <b id="clockAr">--:--</b></span>
+            <span class="clock"><em>Nice</em> <b id="clockFr">--:--</b></span>
+          </div>
+
+          <h1 class="hero__title">
+            <span class="hero__line hero__line--serif"><span>La elegancia</span></span>
+            <span class="hero__line hero__line--wide"><span>de ser</span></span>
+            <span class="hero__line hero__line--serif hero__line--right"><span>diferente.</span></span>
+          </h1>
+
+          <div class="hero__arch" id="heroArch">
+            <img class="hero__arch-first" src="/img/campaign-camisas.webp" alt="" fetchpriority="high" />
+            <picture>
+              <source media="(max-width: 900px)" srcset="/img/campaign-velero-v.webp" />
+              <img class="hero__arch-main" src="/img/campaign-velero.webp" alt="Hombre con camisa de lino rosa navegando en velero" />
+            </picture>
+            <div class="hero__arch-cap">
+              <span>N° 01</span>
+              <span>Camisa de lino rayada</span>
+            </div>
+          </div>
+
+          <div class="hero__reveal" id="heroReveal">
+            <span class="eyebrow">Nouvelle collection</span>
+            <h2>Printemps<br /><em>Été 2026</em></h2>
+            <p>Lino que respira, pima peruano y el detalle tricolor en el pecho. Pensado para el verano largo, del puerto a la cena.</p>
+            <a href="#tienda" class="btn btn--dark">Ver la colección <span class="btn__arrow">→</span></a>
+          </div>
+
+          <div class="hero__cta">
+            <a href="#tienda" class="btn btn--dark" data-magnetic>Entrar a la tienda <span class="btn__arrow">→</span></a>
+            <a href="#look" class="btn btn--ghost" data-magnetic>Armá tu look</a>
+          </div>
+          <div class="hero__scroll"><span>Scroll</span><i></i></div>
+        </div>
+      </section>
+
+      <!-- Manifesto -->
+      <section class="manifesto">
+        <p class="manifesto__text" id="manifesto">
+          Nacimos en Rosario mirando al Mediterráneo. Lino que respira, pima peruano que dura, cortes europeos y el detalle tricolor en el pecho. Ropa para el hombre que no necesita levantar la voz.
+        </p>
+        <div class="manifesto__stats">
+          <div><strong data-count="157">0</strong><span>piezas en temporada</span></div>
+          <div><strong data-count="6">0</strong><span>cuotas sin interés</span></div>
+          <div><strong data-count="2">0</strong><span>locales en Rosario</span></div>
+        </div>
+      </section>
+
+      <!-- Postales de categorías -->
+      <section class="postcards" aria-label="Categorías">
+        <div class="section-head">
+          <span class="eyebrow">Cartes postales</span>
+          <h2>Elegí por dónde <em>empezar</em></h2>
+        </div>
+        <div class="postcards__rail" id="postcards"></div>
+      </section>
+
+      <!-- Colecciones (scroll horizontal) -->
+      <section class="campaigns" id="colecciones">
+        <div class="campaigns__pin">
+          <div class="campaigns__track" id="campaigns"></div>
+          <div class="campaigns__progress"><i id="campaignsProgress"></i></div>
+        </div>
+      </section>
+
+      <!-- TIENDA -->
+      <section class="shop" id="tienda">
+        <div class="section-head section-head--row">
+          <div>
+            <span class="eyebrow">Le vestiaire</span>
+            <h2>La <em>tienda</em></h2>
+          </div>
+          <p class="shop__count" id="shopCount"></p>
+        </div>
+        <div class="filters" id="filters">
+          <div class="filters__chips" id="chips" role="tablist"></div>
+          <div class="filters__right">
+            <label class="toggle"><input type="checkbox" id="onlySale" /><span>Solo ofertas</span></label>
+            <select id="sort" aria-label="Ordenar">
+              <option value="featured">Destacados</option>
+              <option value="price-asc">Menor precio</option>
+              <option value="price-desc">Mayor precio</option>
+              <option value="discount">Mayor descuento</option>
+            </select>
+          </div>
+        </div>
+        <div class="grid" id="grid"></div>
+        <div class="shop__more"><button class="btn btn--ghost" id="loadMore">Ver más piezas</button></div>
+      </section>
+
+      <!-- ARMÁ TU LOOK -->
+      <section class="look" id="look">
+        <div class="look__head">
+          <span class="eyebrow eyebrow--light">Le look du jour</span>
+          <h2>Armá tu <em>look</em></h2>
+          <p>Girá cada carril o dejá que el azar te vista. Elegí tus talles y llevate el conjunto entero en un click.</p>
+        </div>
+        <div class="look__reels" id="reels"></div>
+        <div class="look__footer">
+          <button class="btn btn--light" id="shuffle" data-magnetic>
+            <svg viewBox="0 0 24 24" width="18" height="18"><path d="M16 3h5v5M4 20 21 3M21 16v5h-5M15 15l6 6M4 4l5 5" /></svg>
+            Mezclar todo
+          </button>
+          <div class="look__total">
+            <span>Total del look</span>
+            <strong id="lookTotal">$0</strong>
+            <small id="lookInstallments"></small>
+          </div>
+          <button class="btn btn--tricolor" id="addLook" data-magnetic>Llevar el look completo</button>
+        </div>
+      </section>
+
+      <!-- Beneficios -->
+      <section class="perks">
+        <div class="perk"><span class="perk__num">03/06</span><h3>Cuotas sin interés</h3><p>Con todas las tarjetas.</p></div>
+        <div class="perk"><span class="perk__num">$199K</span><h3>Envío gratis</h3><p>A todo el país. En Rosario, por moto.</p></div>
+        <div class="perk"><span class="perk__num">−20%</span><h3>Transferencia</h3><p>OFF extra pagando por transferencia.</p></div>
+        <div class="perk"><span class="perk__num">2</span><h3>Locales</h3><p>Probátelo y cambialo en Rosario.</p></div>
+      </section>
+
+      <!-- Locales -->
+      <section class="stores" id="locales">
+        <div class="section-head">
+          <span class="eyebrow">Nos encontramos en</span>
+          <h2>Pasá a <em>conocernos</em></h2>
+        </div>
+        <div class="stores__grid" id="stores"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="footer__news">
+          <h3>Recibí la próxima colección <em>antes que nadie</em>.</h3>
+          <form class="news" id="newsForm">
+            <input type="email" required placeholder="tu@email.com" aria-label="Email" />
+            <button type="submit">Suscribirme →</button>
+          </form>
+        </div>
+        <div class="footer__cols">
+          <div>
+            <h4>Tienda</h4>
+            <a href="#tienda" data-cat="camisas">Camisas</a>
+            <a href="#tienda" data-cat="chombas">Chombas</a>
+            <a href="#tienda" data-cat="pantalones">Pantalones</a>
+            <a href="#tienda" data-cat="abrigos">Abrigos</a>
+            <a href="#tienda" data-cat="accesorios">Accesorios</a>
+          </div>
+          <div>
+            <h4>Ayuda</h4>
+            <a href="#">Guía de talles</a>
+            <a href="#">Cambios y devoluciones</a>
+            <a href="#">Preguntas frecuentes</a>
+            <a href="#">Mayoristas</a>
+          </div>
+          <div>
+            <h4>Seguinos</h4>
+            <a href="https://instagram.com/surlacotearg" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://www.facebook.com/surlacoteargentina" target="_blank" rel="noopener">Facebook</a>
+            <a href="https://wa.me/5493415142841" target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__giant" aria-hidden="true">SUR LA CÔTE</div>
+      <div class="footer__bottom">
+        <span>© <span id="year"></span> Sur La Côte · Rosario, Argentina</span>
+        <span class="tricolor tricolor--sm"><i></i><i></i><i></i></span>
+        <span>Envíos por Correo Argentino y motomensajería</span>
+      </div>
+    </footer>
+
+    <a class="wa-float" href="https://wa.me/5493415142841" target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp">
+      <svg viewBox="0 0 32 32"><path d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3Zm0 23.7c-2 0-4-.6-5.7-1.6l-.4-.2-3.9 1 1-3.8-.3-.4A10.7 10.7 0 1 1 16 26.7Zm5.9-8c-.3-.2-1.9-1-2.2-1-.3-.2-.5-.2-.7.1l-1 1.3c-.2.2-.4.2-.7.1a8.8 8.8 0 0 1-4.4-3.8c-.3-.6.3-.5 1-1.7.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.7 3.7 0 0 0-1.1 2.7 6.5 6.5 0 0 0 1.3 3.4 14.8 14.8 0 0 0 5.7 5c2.1.9 3 1 4 .8.7-.1 1.9-.8 2.2-1.5.3-.8.3-1.4.2-1.5-.1-.2-.3-.2-.6-.4Z"/></svg>
+    </a>
+
+    <!-- Producto -->
+    <div class="sheet" id="productSheet" aria-hidden="true">
+      <div class="sheet__backdrop" data-close></div>
+      <article class="pdp" role="dialog" aria-modal="true" aria-label="Producto">
+        <button class="pdp__close" data-close aria-label="Cerrar">✕</button>
+        <div class="pdp__gallery" id="pdpGallery"></div>
+        <div class="pdp__info" id="pdpInfo"></div>
+      </article>
+    </div>
+
+    <!-- Bolsa -->
+    <div class="drawer" id="cartDrawer" aria-hidden="true">
+      <div class="drawer__backdrop" data-close></div>
+      <aside class="cart" role="dialog" aria-modal="true" aria-label="Bolsa de compras">
+        <header class="cart__head">
+          <h3>Tu bolsa <span id="cartCountTitle"></span></h3>
+          <button data-close aria-label="Cerrar">✕</button>
+        </header>
+        <div class="voyage" id="voyage"></div>
+        <div class="cart__items" id="cartItems"></div>
+        <footer class="cart__foot" id="cartFoot"></footer>
+      </aside>
+    </div>
+
+    <!-- Búsqueda -->
+    <div class="search" id="search" aria-hidden="true">
+      <div class="search__box">
+        <input id="searchInput" type="search" placeholder="Buscá lino, chomba, campera…" autocomplete="off" />
+        <button data-close aria-label="Cerrar">Esc</button>
+      </div>
+      <div class="search__hints" id="searchHints"></div>
+      <div class="search__results" id="searchResults"></div>
+    </div>
+
+    <div class="toast" id="toast"></div>
+    <a class="switch" href="b/">Ver propuesta B →</a>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
